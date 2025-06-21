@@ -1,7 +1,7 @@
 # Artify - AI Image Style Transfer App
 
 ![Artify App](homescreen.png)
-![Artify App2](Screenshot 2025-06-21 155106.png)
+![Artify App2](Screenshot.png)
 
 > 🎨 Turn any image into artwork inspired by cultural legends and global masterpieces. Choose from built-in styles or add your own flair. Want to see yourself in a Picasso painting? Or a Van Gogh vision? With Artify, it's just one tap away. Choose your image, pick a style, and create frame-worthy art instantly.
 
