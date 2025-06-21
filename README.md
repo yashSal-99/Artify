@@ -34,42 +34,41 @@ Artify/
 ├── styles/                   # Preloaded style reference images
 ```
 ---
-🛠 Technologies Used
+## 🛠 Technologies Used
 
-🖥️ UI/UX:
+### 🖥️ UI/UX:
 Kivy – Python framework for building cross-platform user interfaces
-KV Language – Declarative syntax for responsive layout design
-Custom Styling – Indian-themed color palette:
-Saffron #FF9933
-Light Beige #F5F5DC
-Deep Red #A62A2A
 
-🧠 AI / Machine Learning:
+KV Language – Declarative syntax for responsive layout design
+
+Custom Styling – Indian-themed color palette: Saffron #FF9933 Light Beige #F5F5DC Deep Red #A62A2A
+
+### 🧠 AI / Machine Learning:
 Neural Style Transfer:
 Based on Google's Magenta Arbitrary Image Stylization model
 Converted to TensorFlow Lite (.tflite) format for fast, offline inference
 Model architecture: encoder-decoder transformer with VGG19-style content/style representations
 
-📦 Android Packaging:
+### 📦 Android Packaging:
 TensorFlow Lite Runtime – Lightweight inference engine bundled into app
 Pillow + NumPy – For image preprocessing and manipulation
 
 ---
 
-📦 Installation (For Devs)
-# Clone repository
+## 📦 Installation (For Devs)
+Clone repository
 git clone https://github.com/yashSal-99/Artify.git
 cd Artify
 
-# Run on desktop (for testing only)
+Run on desktop (for testing only)
 python main.py
 
-# To build for Android
+To build for Android
 refer : https://github.com/yashSal-99/Python_kivy_to_apk_aab.git
 
 
 ---
-🤖 Neural Style Transfer
+## 🤖 Neural Style Transfer
 Artify uses TensorFlow Hub’s NST model, converted into .tflite using TFLite Converter. The model accepts two inputs:
 
 Content Image: the photo you want to stylize
