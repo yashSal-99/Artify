@@ -71,9 +71,9 @@ refer : https://github.com/yashSal-99/Python_kivy_to_apk_aab.git
 ## 🤖 Neural Style Transfer
 Artify uses TensorFlow Hub’s NST model, converted into .tflite using TFLite Converter. The model accepts two inputs:
 
-Content Image: the photo you want to stylize
+- Content Image: the photo you want to stylize
 
-Style Image: the reference art or painting
+- Style Image: the reference art or painting
 
 It outputs a new image, combining the structure of the content with the texture and colors of the style image — all running on-device.
 
