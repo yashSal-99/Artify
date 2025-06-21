@@ -1,0 +1,113 @@
+<HomeScreen>:
+    name: "home"
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 40
+        spacing: 20
+        canvas.before:
+            Color:
+                rgba: (245/255, 245/255, 220/255, 1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: "Artify"
+            font_size: 36
+            color: (1, 0.4, 0, 1)
+            bold: True
+        Label:
+            text: "Convert your image into stunning artworks"
+            font_size: 18
+            color: (0.4, 0.2, 0.2, 1)
+        Button:
+            text: "Let's Try"
+            size_hint_y: None
+            height: 60
+            background_color: (1, 0.6, 0.2, 1)
+            on_release:
+                root.manager.current = "style"
+
+<StyleScreen>:
+    name: "style"
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 10
+        canvas.before:
+            Color:
+                rgba: (245/255, 245/255, 220/255, 1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Button:
+            text: "Choose your image from device"
+            size_hint_y: None
+            height: 50
+            on_release: root.select_content()
+        Label:
+            text: "Choose a style image"
+            font_size: 16
+            color: (1, 0.4, 0, 1)
+            size_hint_y: None
+            height: 30
+        ScrollView:
+            GridLayout:
+                id: style_options
+                cols: 2
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 10
+                padding: 10
+                Button:
+                    text: "Rajputana"
+                    size_hint_y: None
+                    height: 80
+                    on_release: root.set_style('rajputana.jpg')
+                Button:
+                    text: "Picasso"
+                    size_hint_y: None
+                    height: 80
+                    on_release: root.set_style('picasso.jpg')
+                Button:
+                    text: "Van Gogh"
+                    size_hint_y: None
+                    height: 80
+                    on_release: root.set_style('vangogh.jpg')
+                Button:
+                    text: "Few More"
+                    size_hint_y: None
+                    height: 80
+                    on_release: root.set_style('custom.jpg')
+        Button:
+            text: "Choose your own style image from device"
+            size_hint_y: None
+            height: 50
+            on_release: root.select_style()
+
+<ResultScreen>:
+    name: "result"
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 10
+        canvas.before:
+            Color:
+                rgba: (245/255, 245/255, 220/255, 1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: "Displaying merged style image"
+            font_size: 20
+            color: (0.3, 0.2, 0.2, 1)
+            size_hint_y: None
+            height: 40
+        Image:
+            id: result_image
+            source: ''
+            allow_stretch: True
+        Button:
+            text: "Download styled image"
+            size_hint_y: None
+            height: 60
+            on_release: root.download_image()
