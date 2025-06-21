@@ -34,6 +34,7 @@ Artify/
 ├── styles/                   # Preloaded style reference images
 ```
 ---
+
 ## 🛠 Technologies Used
 
 ### 🖥️ UI/UX:
@@ -56,13 +57,14 @@ Pillow + NumPy – For image preprocessing and manipulation
 ---
 
 ## 📦 Installation (For Devs)
+```bash
 Clone repository
 git clone https://github.com/yashSal-99/Artify.git
 cd Artify
 
 Run on desktop (for testing only)
 python main.py
-
+```
 To build for Android
 refer : https://github.com/yashSal-99/Python_kivy_to_apk_aab.git
 
